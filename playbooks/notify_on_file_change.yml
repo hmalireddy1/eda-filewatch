@@ -1,0 +1,8 @@
+---
+- name: Notify File Was Modified
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Show file change message
+      debug:
+        msg: "The file was modified — playbook triggered successfully!"
